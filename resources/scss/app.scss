@@ -9,6 +9,8 @@ body{
     
 }
 
+
+
 nav li:last-child a{
     background: $primary;
     &:hover{
@@ -23,6 +25,12 @@ nav li a{
     }
 }
 
+body, html {
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 section.hero{
     background: $secondary;
@@ -209,7 +217,6 @@ section.status{
     font-size: 14px;
     margin-top: 8px;
 }
-
 
 
 
