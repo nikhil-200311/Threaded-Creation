@@ -21,7 +21,7 @@
             <div class="w-1/2 ">
                 <h6 class="text-3xl "><em>Define Your Style.....</em></h6><br>
                 <h1 class="text-3xl md:text-6xl font-bold py-1 ">Elevate Every Moment with the Perfect Fit!</h1>
-                <button class="px-6 py-2 rounded-full text-white font-bold mt-4 btn-primary">Order Now</button>
+                <button id="orderNowBtn" class="px-6 py-2 rounded-full text-white font-bold mt-4 btn-primary">Order Now</button>
             </div>
             <div class="w-1/2">
                 <video src="img/Untitled design (1).mp4" autoplay loop muted class="w-full"></video>
@@ -29,7 +29,7 @@
         </div>
     </section>
 
-    <section class="menu container mx-auto py-8 ">
+    <section id="shirtsSection" class="menu container mx-auto py-8 ">
         <h1 class="text-xl font-bold mb-8 text-4xl text-center"> SHIRTS</h1>
         <div class="grid grid-cols-1 pl-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 col-gap-12 row-gap-16 gap-y-16">
             <% pizzas.forEach(function(pizza, index){ %>
@@ -59,6 +59,12 @@
 
     <!-- JavaScript code for scrolling effect -->
     <script>
+        // Scroll to shirts section when "Order Now" button is clicked
+        document.getElementById('orderNowBtn').addEventListener('click', function() {
+            document.getElementById('shirtsSection').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Code for animating elements on scroll (if needed)
         window.addEventListener('scroll', function() {
             var items = document.querySelectorAll('.w-full');
             var scrollPosition = window.scrollY;
