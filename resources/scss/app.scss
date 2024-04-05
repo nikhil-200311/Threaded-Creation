@@ -232,3 +232,18 @@ section.status{
 }
 
 
+/* Add this CSS to your existing styles or in a separate CSS file */
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .login {
+        padding-top: 16px; /* Adjust top padding */
+    }
+    .hehehe {
+        max-width: 80%; /* Adjust max width */
+    }
+    .bglogin {
+        background-size: contain; /* Adjust background size */
+    }
+}
+
