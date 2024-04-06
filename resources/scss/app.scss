@@ -5,11 +5,26 @@ body{
     font-family:'Lato',sans-serif;
     -webkit-font-smoothing:antialiased;
     color: $dark;
-    height: 4000px;
+    height: auto;
     
 }
 
+.service-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .5s;
+}
 
+.service-item:hover {
+    background: black;
+}
+
+.service-item * {
+    transition: .5s;
+}
+
+.service-item:hover * {
+    color: var(--light) !important;
+}
 
 nav li:last-child a{
     background: $primary;
@@ -47,7 +62,7 @@ section.hero{
 }
 
 .btn-primary{
-    background: $primary;
+    background: black;
     transition: $smooth;
     &:hover{
         background: $primary-hover;
